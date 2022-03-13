@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Misc
 {
@@ -9,5 +7,9 @@ namespace Misc
     public static class StandardMethods
     {
         public static void None() { }
+
+        public static void SceneSwitch(int sceneIndex) {
+            SceneManager.LoadScene(sceneIndex);
+        }
     }
 }

@@ -1,9 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Misc;
 using UnityEngine.Events;
+using UltEvents;
 
 public class AudioEventTimer : MonoBehaviour
 {
@@ -50,12 +49,12 @@ public class AudioEventTimer : MonoBehaviour
         }
     }
 
-    public void AddEventFront(int time, UnityEvent trigger) {
+    public void AddEventFront(int time, UltEvent trigger) {
         events.Insert(0, new TimedEvent { time = time, trigger = trigger });
         this.enabled = true;
     }
 
-    public void AddEventBack(int time, UnityEvent trigger) {
+    public void AddEventBack(int time, UltEvent trigger) {
         events.Add(new TimedEvent { time = time, trigger = trigger });
         this.enabled = true;
     }
@@ -65,5 +64,5 @@ public class AudioEventTimer : MonoBehaviour
 public class TimedEvent
 {
     public int time;
-    public UnityEvent trigger;
+    public UltEvent trigger;
 }
