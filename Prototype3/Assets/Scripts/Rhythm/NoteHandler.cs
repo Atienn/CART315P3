@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NoteHandler : MonoBehaviour
-{
+public class NoteHandler : MonoBehaviour {
     static Color buttonDefault = new Color(1f, 1f, 1f, 0.25f);
     static Color buttonHit = Color.white;
 
@@ -29,10 +28,9 @@ public class NoteHandler : MonoBehaviour
     [SerializeField] RhythmButton[] buttons = new RhythmButton[4];
 
     // Start is called before the first frame update
-    void Start()
-    {
-        for(byte i = 0; i < buttons.Length; i++) {
-            
+    void Start() {
+        for (byte i = 0; i < buttons.Length; i++) {
+
             Note last = null;
             foreach (Note note in buttons[i].notes) {
                 if (last != null && note.time <= last.time) {
@@ -85,7 +83,7 @@ public class NoteHandler : MonoBehaviour
 
                 score -= failPenality;
                 failFeedback.Flash();
-            }            
+            }
         }
 
         #endregion
@@ -110,19 +108,21 @@ public class NoteHandler : MonoBehaviour
         }
     }
 
+
     public void DisplayText(string input, int threshold, int textIndex) {
         if (score > threshold) {
             text[textIndex].Flash(input);
         }
         else {
             //Hide random characters from the string.
-            int amtToHide = (int)(input.Length *((threshold - score) / (float)threshold));
-            for(int i = 0; i < amtToHide; i++) {
+            int amtToHide = (int)(input.Length * ((threshold - score) / (float)threshold));
+            for (int i = 0; i < amtToHide; i++) {
                 input = input.Replace(input[(int)(UnityEngine.Random.value * input.Length)], '-');
             }
             text[textIndex].Flash(input);
         }
     }
+    
 
     public void ResetScore() {
         //Debug.Log("Score: " + score);
@@ -153,8 +153,8 @@ public class NoteHandler : MonoBehaviour
 
 [Serializable]
 public class RhythmButton {
-    public Image arrow;
     public KeyCode key;
+    public Image arrow;
     public Vector2 noteDirection;
     public List<Note> notes;
     internal bool hit;
