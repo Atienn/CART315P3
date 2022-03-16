@@ -379,20 +379,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 1599342220}
   recorders:
-  - arrow: {fileID: 1302426129}
-    key: 276
+  - key: 276
+    arrow: {fileID: 1302426129}
     noteDirection: {x: -1, y: 0}
     notes: []
-  - arrow: {fileID: 474582759}
-    key: 275
+  - key: 275
+    arrow: {fileID: 474582759}
     noteDirection: {x: 1, y: 0}
     notes: []
-  - arrow: {fileID: 1007022404}
-    key: 273
+  - key: 273
+    arrow: {fileID: 1007022404}
     noteDirection: {x: 0, y: 1}
     notes: []
-  - arrow: {fileID: 1825351752}
-    key: 274
+  - key: 274
+    arrow: {fileID: 1825351752}
     noteDirection: {x: 0, y: -1}
     notes: []
 --- !u!114 &75442797
@@ -412,7 +412,7 @@ MonoBehaviour:
   hitReward: 1
   failPenality: 1
   hitWindow: 17100
-  slowFactor: 300
+  slowFactor: 350
   hitFeedback: {fileID: 1873924432}
   failFeedback: {fileID: 963857444}
   timeRemaining: {fileID: 1972830065}
@@ -420,8 +420,8 @@ MonoBehaviour:
   - {fileID: 120393543}
   - {fileID: 499952005}
   buttons:
-  - arrow: {fileID: 1302426129}
-    key: 276
+  - key: 276
+    arrow: {fileID: 1302426129}
     noteDirection: {x: -1, y: 0}
     notes:
     - time: 212992
@@ -500,8 +500,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 3782656
       display: {fileID: 0}
-  - arrow: {fileID: 474582759}
-    key: 275
+  - key: 275
+    arrow: {fileID: 474582759}
     noteDirection: {x: 1, y: 0}
     notes:
     - time: 155648
@@ -636,8 +636,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 3774464
       display: {fileID: 0}
-  - arrow: {fileID: 1007022404}
-    key: 273
+  - key: 273
+    arrow: {fileID: 1007022404}
     noteDirection: {x: 0, y: 1}
     notes:
     - time: 141312
@@ -712,8 +712,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 3761152
       display: {fileID: 0}
-  - arrow: {fileID: 1825351752}
-    key: 274
+  - key: 274
+    arrow: {fileID: 1825351752}
     noteDirection: {x: 0, y: -1}
     notes:
     - time: 174080
@@ -1266,7 +1266,7 @@ MonoBehaviour:
         _PersistentArguments:
         - _Type: 2
           _Int: 0
-          _String: HURT
+          _String: HURTS
           _X: 0
           _Y: 0
           _Z: 0

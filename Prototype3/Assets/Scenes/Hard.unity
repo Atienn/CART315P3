@@ -510,20 +510,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 1202793219}
   recorders:
-  - arrow: {fileID: 1221766184}
-    key: 276
+  - key: 276
+    arrow: {fileID: 1221766184}
     noteDirection: {x: -1, y: 0}
     notes: []
-  - arrow: {fileID: 696176971}
-    key: 275
+  - key: 275
+    arrow: {fileID: 696176971}
     noteDirection: {x: 1, y: 0}
     notes: []
-  - arrow: {fileID: 789962539}
-    key: 273
+  - key: 273
+    arrow: {fileID: 789962539}
     noteDirection: {x: 0, y: 1}
     notes: []
-  - arrow: {fileID: 2093766854}
-    key: 274
+  - key: 274
+    arrow: {fileID: 2093766854}
     noteDirection: {x: 0, y: -1}
     notes: []
 --- !u!114 &487502222
@@ -1805,8 +1805,8 @@ MonoBehaviour:
   - {fileID: 919477984}
   - {fileID: 1307648054}
   buttons:
-  - arrow: {fileID: 1221766184}
-    key: 276
+  - key: 276
+    arrow: {fileID: 1221766184}
     noteDirection: {x: -1, y: 0}
     notes:
     - time: 297676
@@ -2037,8 +2037,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 8113869
       display: {fileID: 0}
-  - arrow: {fileID: 696176971}
-    key: 275
+  - key: 275
+    arrow: {fileID: 696176971}
     noteDirection: {x: 1, y: 0}
     notes:
     - time: 278528
@@ -2283,8 +2283,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 8020736
       display: {fileID: 0}
-  - arrow: {fileID: 789962539}
-    key: 273
+  - key: 273
+    arrow: {fileID: 789962539}
     noteDirection: {x: 0, y: 1}
     notes:
     - time: 429107
@@ -2395,8 +2395,8 @@ MonoBehaviour:
       display: {fileID: 0}
     - time: 8065126
       display: {fileID: 0}
-  - arrow: {fileID: 2093766854}
-    key: 274
+  - key: 274
+    arrow: {fileID: 2093766854}
     noteDirection: {x: 0, y: -1}
     notes:
     - time: 287232
