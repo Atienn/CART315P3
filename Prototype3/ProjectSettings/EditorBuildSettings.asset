@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Extra.unity
     guid: f473dbbfafbbbfe4f9dec4682cc7f946
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: b6a6bd897339956469fee6585e87036a
   m_configObjects: {}
